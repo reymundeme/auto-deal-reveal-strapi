@@ -100,6 +100,7 @@ export interface SectionsTextCenter extends Struct.ComponentSchema {
       'images' | 'files' | 'videos' | 'audios'
     >;
     content: Schema.Attribute.RichText;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String;
   };
 }
@@ -114,6 +115,7 @@ export interface SectionsTextLeft extends Struct.ComponentSchema {
       'images' | 'files' | 'videos' | 'audios'
     >;
     content: Schema.Attribute.RichText;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String;
   };
 }

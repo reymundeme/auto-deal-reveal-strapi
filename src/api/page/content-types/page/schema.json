@@ -54,6 +54,16 @@
         "sections.hero",
         "sections.sections"
       ]
+    },
+    "pageBackground": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
