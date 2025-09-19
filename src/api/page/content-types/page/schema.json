@@ -42,6 +42,18 @@
     },
     "jsonLd": {
       "type": "json"
+    },
+    "Sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.text-left",
+        "sections.text-center",
+        "sections.section2",
+        "sections.section1",
+        "sections.item-content",
+        "sections.hero",
+        "sections.sections"
+      ]
     }
   }
 }

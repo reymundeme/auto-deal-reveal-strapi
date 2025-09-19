@@ -1,17 +1,19 @@
 {
-  "collectionName": "components_sections_items",
+  "collectionName": "components_sections_item_sections",
   "info": {
-    "displayName": "item"
+    "displayName": "item-section"
   },
   "options": {},
   "attributes": {
+    "item": {
+      "type": "component",
+      "component": "sections.item-content",
+      "repeatable": true
+    },
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
-    "image": {
+    "background": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -20,12 +22,6 @@
         "videos",
         "audios"
       ]
-    },
-    "ButtonText": {
-      "type": "string"
-    },
-    "ButtonURL": {
-      "type": "string"
     }
   },
   "config": {}
