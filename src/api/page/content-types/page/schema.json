@@ -43,6 +43,16 @@
     "jsonLd": {
       "type": "json"
     },
+    "pageBackground": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "Sections": {
       "type": "dynamiczone",
       "components": [
@@ -53,16 +63,6 @@
         "sections.item-content",
         "sections.hero",
         "sections.sections"
-      ]
-    },
-    "pageBackground": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
       ]
     }
   }
