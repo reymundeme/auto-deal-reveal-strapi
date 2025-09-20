@@ -442,7 +442,6 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.section2',
         'sections.section1',
         'sections.hero',
-        'sections.sections',
         'sections.item-section',
       ]
     >;
