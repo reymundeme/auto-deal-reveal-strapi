@@ -11,7 +11,7 @@
     "subtitle": {
       "type": "string"
     },
-    "backgroundImage": {
+    "background": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

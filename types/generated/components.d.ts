@@ -6,7 +6,7 @@ export interface SectionsHero extends Struct.ComponentSchema {
     displayName: 'hero';
   };
   attributes: {
-    backgroundImage: Schema.Attribute.Media<
+    background: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
     buttonText: Schema.Attribute.String;
