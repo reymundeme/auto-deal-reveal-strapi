@@ -441,9 +441,9 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.text-center',
         'sections.section2',
         'sections.section1',
-        'sections.item-content',
         'sections.hero',
         'sections.sections',
+        'sections.item-section',
       ]
     >;
     seoDescription: Schema.Attribute.String;
