@@ -434,9 +434,6 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
-    pageBackground: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
     publishedAt: Schema.Attribute.DateTime;
     Sections: Schema.Attribute.DynamicZone<
       [
