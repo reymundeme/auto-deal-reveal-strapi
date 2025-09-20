@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
+  "collectionName": "childpages",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "Page"
+    "singularName": "childpage",
+    "pluralName": "childpages",
+    "displayName": "Childpage"
   },
   "options": {
     "draftAndPublish": true
@@ -32,7 +32,7 @@
     },
     "ogImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
@@ -43,22 +43,22 @@
     "jsonLd": {
       "type": "json"
     },
-    "Sections": {
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "childpages"
+    },
+    "sections": {
       "type": "dynamiczone",
       "components": [
         "sections.text-left",
         "sections.text-center",
         "sections.section2",
         "sections.section1",
-        "sections.hero",
-        "sections.item-section"
+        "sections.item-section",
+        "sections.hero"
       ]
-    },
-    "childpages": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::childpage.childpage",
-      "mappedBy": "page"
     }
   }
 }

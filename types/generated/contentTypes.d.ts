@@ -410,6 +410,52 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiChildpageChildpage extends Struct.CollectionTypeSchema {
+  collectionName: 'childpages';
+  info: {
+    displayName: 'Childpage';
+    pluralName: 'childpages';
+    singularName: 'childpage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    canonicalUrl: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    jsonLd: Schema.Attribute.JSON;
+    keywords: Schema.Attribute.JSON;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::childpage.childpage'
+    > &
+      Schema.Attribute.Private;
+    ogImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    page: Schema.Attribute.Relation<'manyToOne', 'api::page.page'>;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'sections.text-left',
+        'sections.text-center',
+        'sections.section2',
+        'sections.section1',
+        'sections.item-section',
+        'sections.hero',
+      ]
+    >;
+    seoDescription: Schema.Attribute.String;
+    seoTitle: Schema.Attribute.String;
+    slug: Schema.Attribute.UID<'title'>;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPagePage extends Struct.CollectionTypeSchema {
   collectionName: 'pages';
   info: {
@@ -422,6 +468,10 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
   };
   attributes: {
     canonicalUrl: Schema.Attribute.String;
+    childpages: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::childpage.childpage'
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -965,6 +1015,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::childpage.childpage': ApiChildpageChildpage;
       'api::page.page': ApiPagePage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
