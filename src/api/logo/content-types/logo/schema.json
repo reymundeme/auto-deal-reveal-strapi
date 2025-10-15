@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "logo",
+  "info": {
+    "singularName": "logo",
+    "pluralName": "logo",
+    "displayName": "Logo "
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "component": "sections.logo",
+      "required": true
+    }
+  }
+}
