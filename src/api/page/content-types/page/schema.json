@@ -11,38 +11,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "seoTitle": {
-      "type": "string"
-    },
-    "seoDescription": {
-      "type": "string"
-    },
-    "canonicalUrl": {
-      "type": "string"
-    },
-    "keywords": {
-      "type": "json"
-    },
+    "title": { "type": "string" },
+    "slug": { "type": "uid", "targetField": "title" },
+    "seoTitle": { "type": "string" },
+    "seoDescription": { "type": "string" },
+    "canonicalUrl": { "type": "string" },
+    "keywords": { "type": "json" },
     "ogImage": {
       "type": "media",
       "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
-    "jsonLd": {
-      "type": "json"
-    },
+    "jsonLd": { "type": "json" },
     "Sections": {
       "type": "dynamiczone",
       "components": [
@@ -53,6 +33,11 @@
         "sections.hero",
         "sections.item-section"
       ]
+    },
+    "logo": {
+      "type": "component",
+      "component": "sections.logo",
+      "required": true
     },
     "childpages": {
       "type": "relation",
