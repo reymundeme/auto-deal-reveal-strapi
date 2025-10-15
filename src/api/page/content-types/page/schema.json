@@ -36,7 +36,7 @@
     },
     "logo": {
       "type": "component",
-      "component": "sections.logo",
+      "component": "logo",
       "required": true
     },
     "childpages": {
