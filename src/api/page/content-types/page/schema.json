@@ -16,6 +16,11 @@
     "seoTitle": { "type": "string" },
     "seoDescription": { "type": "string" },
     "canonicalUrl": { "type": "string" },
+    "logo": {
+      "type": "component",
+      "component": "logo",
+      "required": true
+    },
     "keywords": { "type": "json" },
     "ogImage": {
       "type": "media",
@@ -33,11 +38,6 @@
         "sections.hero",
         "sections.item-section"
       ]
-    },
-    "logo": {
-      "type": "component",
-      "component": "logo",
-      "required": true
     },
     "childpages": {
       "type": "relation",
