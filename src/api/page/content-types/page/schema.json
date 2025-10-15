@@ -16,11 +16,6 @@
     "seoTitle": { "type": "string" },
     "seoDescription": { "type": "string" },
     "canonicalUrl": { "type": "string" },
-    "logo": {
-      "type": "component",
-      "component": "sections.logo",
-      "required": true
-    },
     "keywords": { "type": "json" },
     "ogImage": {
       "type": "media",
