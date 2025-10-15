@@ -3,7 +3,7 @@
   "collectionName": "logo",
   "info": {
     "singularName": "logo",
-    "pluralName": "logo",
+    "pluralName": "logos",
     "displayName": "Logo "
   },
   "options": {
@@ -18,3 +18,4 @@
     }
   }
 }
+
