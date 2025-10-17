@@ -10,6 +10,9 @@
       "component": "sections.item-content",
       "repeatable": true
     },
+    "content" :{
+      "type" : "richtext"
+    }
     "title": {
       "type": "string"
     },
